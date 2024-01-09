@@ -6,7 +6,7 @@ format: jb-book
 root: index
 options:
   numbered: true
-chapters:
-- file: markdown
+#chapters:
+# - file: markdown
 # - file: notebooks
 # - file: markdown-notebooks
