@@ -2,7 +2,7 @@
 # https://jupyterbook.org/customize/config.html
 
 # TODO: Verander de titel!
-title: Syllabus Computational Science
+title: Computational Science
 
 # Auteur is verplicht, maar wordt voor de syllabus site automatisch aangepast op
 # basis van de commitgeschiedenis.
