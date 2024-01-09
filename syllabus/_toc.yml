@@ -8,5 +8,5 @@ options:
   numbered: true
 chapters:
 - file: markdown
-- file: notebooks
-- file: markdown-notebooks
+# - file: notebooks
+# - file: markdown-notebooks

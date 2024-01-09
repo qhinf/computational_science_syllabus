@@ -2,7 +2,7 @@
 # https://jupyterbook.org/customize/config.html
 
 # TODO: Verander de titel!
-title: Voorbeeldsyllabus
+title: Syllabus Computational Science
 
 # Auteur is verplicht, maar wordt voor de syllabus site automatisch aangepast op
 # basis van de commitgeschiedenis.
@@ -53,11 +53,11 @@ sphinx:
     # een volgende editie.
     myst_substitutions:
       versie: "Globaal afgehandeld. Niet wijzigen."
-      deadline: "donderdag 29 juno, 16:00"
-      deadline_uitstel_aanvragen: "maandag 12 juno, 16:00"
-      deadline_uitstel: "donderdag 13 julij, 16:00"
-      docent: "..."
-      docent_email: "... apenstaartje quadraam punt nl"
+      deadline: "donderdag 28 maart, 16:00"
+      deadline_uitstel_aanvragen: "maandag 18 maart, 16:00"
+      deadline_uitstel: "donderdag 16 april, 16:00"
+      docent: "Pieter van Engelen-san"
+      docent_email: "P punt vanEngelen apenstaartje quadraam punt nl"
 
 
 # html, repository en launch_buttons instellingen worden globaal voor alle
