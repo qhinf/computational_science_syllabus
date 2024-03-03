@@ -26,3 +26,25 @@ jupyter-book build syllabus
 ```
 
 De homepagina staat dan in *syllabus\\_build\html\index.html*.
+
+
+
+
+
+# Tabel die ik nog mogelijk nodig heb
+
+:::{list-table} **Onderzoek: weging 1**
+:header-rows: 1
+* - Criterium
+  - 0p
+  - 1p
+  - 2p
+  - 3p
+  - 4p
+* - Wat weet je van dit fenomeen? Voer eventueel het benodigde onderzoek uit. 
+  - Niets  of een veel te simpele voorstelling van het fenomeen<br>Geen onderzoek gedaan
+  - Enkele beschrijvende algemene opmerkingen<br>geenonderzoek gedaan of alleen onderzoek naar enkele aspecten van het fenomeen.
+  - Enig onderzoek gedaan<br>samenhangend beeld van het fenomeen<br>Wel meer relevante aspecten van een fenomeen kunnen benoemen die van belang zijn, maar geen zicht hebben onderlinge relaties.
+  - Onderzoek gedaan<br>samenhangend en compleet beeld van het fenomeen<br>relevante aspecten van een fenomeen kunnen benoemen, die van belang zijn. Zicht hebben op de onderlinge relaties.
+  - Alles van 3p. En bovendien, relatie van dit fenomeen tot andere fenomenen in de wereld beschreven en/of dit fenomeen zodanig geconceptualiseerd dat het toe te passen is in andere contexten en zijn relevantie uitgelegd. Relevantie voor andere fenomenen uitgelegd.
+:::
