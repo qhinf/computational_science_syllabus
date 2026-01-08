@@ -5,8 +5,24 @@
 format: jb-book
 root: index
 options:
-  numbered: 2
-chapters:
- - file: eindopdracht
-# - file: notebooks
-# - file: markdown-notebooks
+  numbered: 3
+parts:
+- caption: Lesmateriaal
+  numbered: 3
+  chapters:
+    - file: hoofdstukken/01_modellen_emergent
+    - file: hoofdstukken/02_conceptueel_abm
+    - file: hoofdstukken/03_netlogo_basis
+    - file: hoofdstukken/04_emergent_bouwen
+    - file: hoofdstukken/05_experimenteren_data
+    - file: hoofdstukken/06_verificatie_validatie_verslag
+- caption: Verdiepingsmateriaal
+  numbered: true
+  chapters:
+    - file: verdieping/index
+    - file: verdieping/boids
+    - file: verdieping/bosbrand
+    - file: verdieping/crowd_evacuatie
+- caption: De eindopdracht
+  chapters:
+    - file: eindopdracht

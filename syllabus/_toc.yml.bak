@@ -1,0 +1,12 @@
+# Inhoudsopgave
+# Alle pagina's van de syllabus moeten hier in staan!
+# https://jupyterbook.org/structure/toc.html
+
+format: jb-book
+root: index
+options:
+  numbered: 2
+chapters:
+ - file: eindopdracht
+# - file: notebooks
+# - file: markdown-notebooks
