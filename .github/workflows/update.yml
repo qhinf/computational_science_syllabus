@@ -6,6 +6,7 @@ on:
 jobs:
   update_syllabi:
     runs-on: ubuntu-latest
+    if: ${{ !contains(github.ref_name, 'draft') }}
     steps:
       - name: Get syllabus name
         # Get the name of this syllabus from the repository (owner/repo_name) by
