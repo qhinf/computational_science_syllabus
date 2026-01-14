@@ -8,7 +8,7 @@ options:
   numbered: 3
 parts:
 - caption: Lesmateriaal
-  numbered: 3
+  numbered: 2
   chapters:
     - file: hoofdstukken/01_modellen_emergent
     - file: hoofdstukken/02_conceptueel_abm
@@ -19,10 +19,9 @@ parts:
 - caption: Verdiepingsmateriaal
   numbered: true
   chapters:
-    - file: verdieping/index
     - file: verdieping/boids
-    - file: verdieping/bosbrand
     - file: verdieping/crowd_evacuatie
+    - file: verdieping/segregatie
 - caption: De eindopdracht
   chapters:
     - file: eindopdracht

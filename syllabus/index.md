@@ -3,9 +3,9 @@
 > 
 > Jouw docent: {{ docent }} ({{ docent_email }})*
 
-# Computational Science – Agent-Based Modeling
+# Computational Science
 
-Welkom bij de module Computational Science! In deze module ontdek je hoe je complexe fenomenen uit de echte wereld kunt begrijpen door ze na te bouwen met computers. Je gaat werken met **Agent-Based Modeling (ABM)**: een krachtige techniek waarbij je simpele regels voor individuen (agents) programmeert en dan kijkt welk groepsgedrag daaruit ontstaat. Denk aan vogels die samen vliegen, mensen die evacueren uit een gebouw, of auto's in een file – allemaal systemen waar emergent gedrag optreedt. Je leert hoe je zo'n model ontwerpt, bouwt in NetLogo, experimenteert met parameters, en je bevindingen wetenschappelijk rapporteert. Aan het eind heb je een compleet werkend model gemaakt én weet je hoe computational science in de praktijk wordt toegepast.
+Welkom bij de module Computational Science! In deze module ontdek je hoe je complexe fenomenen uit de echte wereld kunt begrijpen door ze na te bouwen met computers. Je gaat werken met **Agent-Based Modeling (ABM)**. Dit is een krachtige techniek waarbij je simpele regels voor individuen (agents) programmeert en dan kijkt welk groepsgedrag daaruit ontstaat. Denk aan vogels die samen vliegen, mensen die evacueren uit een gebouw, of auto's in een file – allemaal systemen waar emergent gedrag optreedt. Je leert hoe je zo'n model ontwerpt, bouwt in NetLogo, experimenteert met parameters, en je bevindingen wetenschappelijk rapporteert. Aan het eind heb je een compleet werkend model gemaakt én weet je hoe computational science in de praktijk wordt toegepast.
 
 **Waarom is dit belangrijk?** Computational science wordt steeds vaker ingezet in wetenschap, bedrijfsleven en beleid. Met ABM kun je scenario's doorrekenen die te gevaarlijk, te duur of onmogelijk zijn om in het echt te testen. En het mooie: je leert zelf een model te bouwen van iets wat jou interesseert.
 
@@ -77,10 +77,8 @@ Deze module bestaat uit 7 weken met een mix van online zelfstudie en fysieke bij
 Om deze module te volgen heb je nodig:
 
 - **NetLogo** (gratis downloaden via [ccl.northwestern.edu/netlogo](https://ccl.northwestern.edu/netlogo/)) óf **NetLogo Web** (online versie, geen installatie nodig)
-- Een **inlevermap** (bijv. Google Drive folder of lokale map) voor tussenproducten en eindopdracht
 - **Spreadsheetprogramma** (Excel, Google Sheets of LibreOffice Calc) voor data-analyse
 - **Tekstverwerker** voor het verslag (Word, Google Docs of LaTeX)
-- Circa **6–8 uur per week** voor zelfstudie, opdrachten en werken aan je model
 
 :::{tip}
 NetLogo Web is ideaal om snel te beginnen zonder installatie. Voor grotere modellen met veel agents of complexe berekeningen is de desktop-versie sneller en stabieler.
@@ -123,4 +121,4 @@ Hieronder vind je alle hoofdstukken en materialen van deze module:
 
 ---
 
-**Succes met de module! Computational science is een avontuur – je gaat dingen zien ontstaan die je niet hebt geprogrammeerd. Dat is de magie van emergent gedrag. Veel plezier!** 🚀
+**Succes met de module! Computational science is een avontuur – je gaat dingen zien ontstaan die je niet hebt geprogrammeerd. Dat is de magie van emergent gedrag. Veel plezier!**
