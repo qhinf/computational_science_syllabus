@@ -34,7 +34,6 @@ In **1986** publiceerde computergraficus **Craig Reynolds** een baanbrekend algo
 - Robotica: drone-zwermen, autonome voertuigen
 - Biologie: verklaart hoe echte zwermen werken zonder leider
 
-[Screenshot: Film frame van Batman Returns met vleermuiszwerm]
 
 ### Waarom is dit belangrijk?
 
@@ -282,7 +281,6 @@ end
 **Monitor:**
 - `count boids`
 
-[Screenshot: NetLogo interface met boids-zwerm in beweging]
 
 :::{admonition} Let op: wrapping
 :class: warning
@@ -401,7 +399,6 @@ end
 - Wat als roofdier even snel is als boids?
 - Wat als boids meer vision hebben (eerder roofdier detecteren)?
 
-[Screenshot: Boids-zwerm vlucht van rood roofdier, zwerm splitst]
 
 ---
 
@@ -581,7 +578,6 @@ end
 | 4 | 5.2 | 5.8 | Te compact, boids clusteren |
 | 5 | 3.8 | 7.2 | Zwerm collapst tot 1 punt, instabiel |
 
-[Screenshot: Grafiek met max-cohere-turn op x-as, avg-distance op y-as, U-vormige curve met optimum bij 3]
 
 ### Interpretatie
 
@@ -675,7 +671,7 @@ NetLogo ondersteunt 3D (NetLogo 3D). Pas boids aan naar 3D-ruimte.
 
 **Lastig!** Dit is een flinke stap. Verwacht 6-8 uur werk.
 
-**Schrijf:** 600-800 woorden + screenshots van 3D-zwerm (verschillende perspectieven)
+**Schrijf:** 600-800 woorden + beschrijving van 3D-zwerm (verschillende perspectieven)
 ```
 
 ```{exercise} Opdracht 4: Machine learning optimalisatie

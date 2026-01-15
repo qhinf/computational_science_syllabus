@@ -268,7 +268,6 @@ end
 
 **Klaar!** Je hebt nu een werkend mieren-model met emergent gedrag: paden ontstaan vanzelf.
 
-[Screenshot: Mieren-model met blauwe paden tussen geel nest en groene voedsel]
 
 ---
 
@@ -456,7 +455,6 @@ end
 
 **Klaar!** Je wave gaat nu rond in een cirkel. Emergent gedrag: de golf blijft zichzelf onderhouden!
 
-[Screenshot: Mexican wave in cirkel, gele "golf" loopt rond]
 
 :::{admonition} Let op: Edge cases
 :class: warning
@@ -606,9 +604,7 @@ plot sum [voedsel] of patches
 plot aantal-staat
 ```
 
-[Screenshot: Mieren-model interface met 3 monitors en 1 plot]
 
-[Screenshot: Mexican wave interface met 2 monitors en 1 plot]
 
 ```{exercise} Oefening (Toepassen)
 :label: oef-4-2
@@ -622,7 +618,6 @@ Voeg aan je model toe:
 Experimenteer: Verander één parameter en beschrijf het effect in 3-5 zinnen. Bijvoorbeeld:
 - "Als ik verdampingssnelheid verhoog van 0.05 naar 0.1, verdwijnen de paden sneller en vinden mieren minder efficiënt voedsel."
 
-Maak een [Screenshot: jouw model met duidelijk effect] en plaats deze notitie in je document.
 ```
 
 ---
@@ -798,7 +793,6 @@ if [zit-of-staat?] of linker-buur = "staat" or
 
 **Effect:** Golf kan van beide kanten komen, interessante botsingen!
 
-[Screenshot: Mieren-model met obstakels, paden gaan eromheen]
 
 ---
 
@@ -856,7 +850,7 @@ Implementeer:
 3. Mieren gaan terug naar hun eigen nest
 4. Voeg verschillende kleuren toe: nest 1 = rood, nest 2 = blauw
 
-Observeer: Ontstaan er competitie om voedsel? Vormen de nesten aparte paden, of gebruiken ze dezelfde? Leg uit wat je ziet in 200-300 woorden + screenshots.
+Observeer: Ontstaan er competitie om voedsel? Vormen de nesten aparte paden, of gebruiken ze dezelfde? Leg uit wat je ziet in 200-300 woorden.
 ```
 
 ---
@@ -887,7 +881,7 @@ Een NetLogo-bestand (.nlogo) met de **versie 1 van je eindproject** dat emergent
    - Korte verklaring: "Het patroon ontstaat omdat..." (3-5 zinnen)
 
 4. **Document** (apart, 1 pagina A4):
-   - Screenshot van je model in actie (met zichtbaar emergent patroon)
+   - Beschrijving van je model in actie (met zichtbaar emergent patroon)
    - Korte verklaring (10 regels): Waarom ontstaat dit patroon? Welke regel is cruciaal?
 
 ### Checklist: je bent klaar als…
@@ -906,7 +900,7 @@ Een NetLogo-bestand (.nlogo) met de **versie 1 van je eindproject** dat emergent
 Dit model is de **kern van je eindverslag**:
 
 - **Inleiding:** "Ik heb dit fenomeen gemodelleerd omdat..."
-- **Methode:** Screenshots van interface + code, uitleg van regels
+- **Methode:** Beschrijving van interface + code, uitleg van regels
 - **Resultaten (hoofdstuk 5):** Je gaat experimenteren met parameters en data verzamelen
 - **Discussie:** "Het emergente gedrag ontstaat door..." (je verklaring van sectie 4.5)
 

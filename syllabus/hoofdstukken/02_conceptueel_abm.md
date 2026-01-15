@@ -183,7 +183,6 @@ Laten we de Mexican wave volledig uitwerken:
 
 Dit zijn slechts 4 simpele regels, maar ze produceren het emergente gedrag van een prachtige golf door het stadion!
 
-[Screenshot: Simulatie van Mexican wave met regels visueel weergegeven]
 
 ```{exercise} Oefening (Toepassen)
 :label: oef-2-2
@@ -335,7 +334,6 @@ Plots laten patronen zien die je anders mist:
 - Oscillaties (op-en-neer patroon)
 - Chaos (onvoorspelbaar)
 
-[Screenshot: Voorbeeld plot met besmettingscurve: langzaam starten, exponentiële groei, afvlakken]
 
 :::{admonition} Let op
 :class: warning

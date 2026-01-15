@@ -37,7 +37,6 @@ NetLogo is een programmeeromgeving specifiek voor Agent-Based Modeling. Het is g
 
 Als je NetLogo opent, zie je drie tabbladen bovenin: **Interface**, **Info** en **Code**. Dit zijn de drie kernonderdelen van elk NetLogo-model.
 
-[Screenshot: NetLogo startscherm met Interface/Info/Code tabs]
 
 :::{tip}
 **NetLogo Models Library**  
@@ -88,7 +87,6 @@ Op het Interface-tabblad kun je elementen toevoegen door rechts te klikken:
    - Value: 50 (startwaarde)
 4. Klik OK
 
-[Screenshot: Interface met button en slider]
 
 :::{tip}
 **Naamgeving in NetLogo**  
@@ -263,7 +261,6 @@ end
 - Ze bewegen 1 stap
 - Als ze de rand van de wereld raken, "stuiteren" ze terug
 
-[Screenshot: Random walk met 20 turtles die verschillende paden volgen]
 
 :::{tip}
 **Turtles volgen**  
@@ -379,7 +376,6 @@ to go
 end
 ```
 
-[Screenshot: Mieren (rode stippen) zoeken groene voedsel-patches op bruin grid]
 
 :::{admonition} Let op: scope en ask
 :class: warning
@@ -600,7 +596,6 @@ end
 
 **Verwachting:** Gemiddelde-afstand zou vergelijkbaar moeten zijn (random walk is random!), maar max-afstand is groter met meer turtles (meer kans op "lucky wanderer").
 
-[Screenshot: Random walk sporen, turtles verspreid vanaf centrum, met plot]
 
 ```{exercise} Oefening (Reflecteren)
 :label: oef-3-3
@@ -731,7 +726,7 @@ Dit skelet is de **technische basis** van je hele project:
 - **Hoofdstuk 4:** Je gaat dit model uitbreiden met de regels uit je conceptuele canvas (hoofdstuk 2)
 - **Hoofdstuk 5:** Je gaat experimenteren met parameters en data verzamelen
 - **Hoofdstuk 6:** Je gaat je model valideren en verfijnen
-- **Eindverslag:** Screenshots van Interface, code-snippets, en grafieken komen uit dit model
+- **Eindverslag:** Code-snippets en grafieken komen uit dit model
 
 **Tips voor succes:**
 

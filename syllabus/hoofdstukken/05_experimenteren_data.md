@@ -362,7 +362,6 @@ Je hebt een plan. Nu: **uitvoeren**. Twee methoden.
 5. NetLogo doet alle 25 runs automatisch!
 6. Output wordt opgeslagen als CSV-bestand
 
-[Screenshot: BehaviorSpace interface met ingevulde velden]
 
 **Voordeel:** Volledig automatisch, geen fouten, CSV-export  
 **Nadeel:** Leer-curve, je ziet niet wat er gebeurt tijdens runs
@@ -439,7 +438,6 @@ Je hebt data! Nu: **samenvatten** zodat patronen zichtbaar worden.
 - Punten: Gemiddeldes
 - (Optioneel) Foutbalken: SD tonen
 
-[Screenshot: Lijndiagram met verdampingssnelheid op x-as, verzameld voedsel op y-as, duidelijke piek bij 0.05]
 
 **Wat zie je in deze grafiek?**
 

@@ -125,7 +125,6 @@ Individuele mieren zijn niet slim. Ze hebben geen kaart, geen meesterplan. Toch 
 **Emergent resultaat:**  
 Zodra één mier voedsel vindt en een spoor legt, gaan andere mieren dat spoor volgen. Zij versterken het spoor. Na een tijdje ontstaat er een *snelweg* tussen nest en voedsel, zonder dat er een "baas-mier" is die het heeft bedacht. Het pad ontstaat vanzelf uit de simpele regels.
 
-[Screenshot: NetLogo ants model – mieren vormen paden naar voedselbronnen]
 
 ### Voorbeeld 2: Mexican wave in een stadion
 
@@ -139,7 +138,6 @@ Je hebt het vast wel eens gezien: duizenden mensen in een stadion maken samen ee
 **Emergent resultaat:**  
 De "golf" loopt door het stadion zonder dat iemand het stuurt. Als je van bovenaf kijkt, zie je een prachtig patroon. Maar elke persoon deed alleen maar: kijk naar je buurman, sta op, ga zitten. Dat is emergent gedrag: het *geheel* is meer dan de som der *delen*.
 
-[Screenshot: Simulatie van Mexican wave – mensen staan op in een golfpatroon]
 
 ### Nog een krachtig voorbeeld: Segregatie
 

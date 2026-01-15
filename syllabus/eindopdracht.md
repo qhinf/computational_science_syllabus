@@ -90,7 +90,6 @@ Bouw je model **incrementeel** op:
 2. Voeg stap voor stap gedrag toe
 3. **Test na elke toevoeging** of het werkt zoals verwacht (verificatie!)
 4. Gebruik `print`-statements of monitors om gedrag te controleren
-5. Maak screenshots van tussenstappen voor je verslag
 
 ```{admonition} Verificatie tijdens implementeren
 :class: warning
@@ -235,7 +234,6 @@ Controleer voor inleveren of je alles hebt:
 - [ ] NetLogo-code geschreven en werkend
 - [ ] Code is overzichtelijk en voorzien van commentaar
 - [ ] Verificatiestappen beschreven in verslag
-- [ ] Screenshots van tussenstappen toegevoegd
 - [ ] Model doet wat het zou moeten doen (geen bugs)
 
 ### Deel 4: Experimenteren

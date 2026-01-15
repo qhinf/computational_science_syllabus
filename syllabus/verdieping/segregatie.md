@@ -44,7 +44,6 @@ In **1971** publiceerde economist **Thomas Schelling** een baanbrekend artikel: 
 - **Sociologie:** Verklaart segregatie zonder racisme te postuleren
 - **Urban planning:** Invloed op beleid (diversiteit bevorderen)
 
-[Screenshot: Schelling's originele artikel met munten op schaakbord]
 
 ### Waarom is dit controversieel?
 
@@ -325,7 +324,6 @@ end
 - X-as: ticks
 - Y-as: percent-similar (stijgt naar ~80%+)
 
-[Screenshot: NetLogo interface met rood/blauwe bewoners in clusters]
 
 :::{tip}
 **Visualisatie verbeteren:**  
@@ -441,7 +439,6 @@ end
 
 **Maatschappelijke implicatie:** Arme minderheidsgroepen zijn **dubbel geïsoleerd** (arm + etnisch).
 
-[Screenshot: Wijk met groene (goedkoop) en donkergroene (duur) patches, clustering per wealth]
 
 ---
 
@@ -562,7 +559,6 @@ end
 | 70% | 58.1% | 9.2 | 680 ticks | Minimale segregatie |
 | 80% | 56.3% | 11.5 | 920 ticks | Bijna geen segregatie |
 
-[Screenshot: Grafiek met tolerantie op x-as, segregatie-index op y-as, afnemende curve]
 
 ### Interpretatie
 

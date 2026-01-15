@@ -36,7 +36,6 @@ In dit hoofdstuk behandelen we:
 
 **Oorzaak:** Geen paniek, maar **fysieke krachten in dichte massa**. Bij >5 personen/m², ontstaat **crowd crush**: mensen kunnen niet meer bewegen, worden geplet.
 
-[Screenshot: Foto Hillsborough-hekken (historisch archief)]
 
 ### Andere crowd-rampen
 
@@ -268,7 +267,6 @@ end
 - X-as: ticks
 - Y-as: count people (daalt naar 0)
 
-[Screenshot: NetLogo interface met mensen (blauw) die naar groene uitgang bewegen]
 
 :::{tip}
 **Visualisatie verbeteren:**  
@@ -374,7 +372,6 @@ end
 
 **Les:** In echte evacuaties: **blijf kalm** is niet alleen advies, het is **efficiënter**.
 
-[Screenshot: Visualisatie met rode (paniek) en blauwe (calm) mensen, file bij uitgang]
 
 ---
 
@@ -506,7 +503,6 @@ end
 | 10 | 145 ticks | 12 | Kleine verbetering |
 | 12 | 140 ticks | 11 | Marginale winst |
 
-[Screenshot: Grafiek met uitgang-breedte op x-as, evacuatietijd op y-as, exponentiële daling]
 
 ### Interpretatie
 
@@ -628,7 +624,7 @@ Kies een echt gebouw (je school, stadion, theater) en simuleer evacuatie.
 
 **Zeer toegepast en maatschappelijk relevant!**
 
-**Schrijf:** 1000-1200 woorden + plattegrond + simulatie-screenshots + adviesrapport
+**Schrijf:** 1000-1200 woorden + plattegrond + adviesrapport
 ```
 
 ---
