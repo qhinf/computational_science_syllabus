@@ -1,3 +1,4 @@
+(hoofdstukken/06_verificatie_validatie_verslag)=
 # Onderzoek doen: verificatie, validatie en verslag
 
 Je hebt een model gebouwd en data verzameld. Maar hoe weet je of je model **klopt**? En hoe presenteer je je onderzoek professioneel? In dit hoofdstuk leer je het verschil tussen verificatie ("werkt mijn code?") en validatie ("lijkt het op de werkelijkheid?"). Je maakt je abstractie-keuzes expliciet, identificeert beperkingen, en schrijft een gestructureerd verslag waarin je jezelf geen dingen aanpraat. Dit is het sluitstuk: van spelen met code naar wetenschappelijk onderzoek.

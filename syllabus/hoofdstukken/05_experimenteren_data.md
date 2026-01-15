@@ -1,3 +1,4 @@
+(hoofdstukken/05_experimenteren_data)=
 # Experimenteren en data verzamelen
 
 Je hebt nu een werkend model met emergent gedrag. Maar één keer runnen is niet genoeg om wetenschappelijke conclusies te trekken. In dit hoofdstuk leer je **systematisch experimenteren**: hoe ontwerp je een experiment, hoe verzamel je betrouwbare data, en hoe trek je conclusies zonder te overdrijven. Je leert waarom "one run is no run", hoe je parameters varieert, data samenvat in tabellen en grafieken, en hoe je onderscheid maakt tussen correlatie en causatie. Dit is waar computational science échte wetenschap wordt.

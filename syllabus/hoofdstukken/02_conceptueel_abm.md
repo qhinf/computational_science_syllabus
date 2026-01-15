@@ -1,3 +1,4 @@
+(hoofdstukken/02_conceptueel_abm)=
 # Van fenomeen naar regels (conceptueel ABM)
 
 Je hebt in hoofdstuk 1 geleerd wat emergent gedrag is en hoe agents met simpele regels tot verrassende patronen kunnen leiden. Maar hoe vertaal je een fenomeen uit de echte wereld – zoals een Mexican wave, mieren die voedsel zoeken, of mensen die evacueren – naar een werkend model? In dit hoofdstuk leer je systematisch nadenken over agents, omgeving en interacties. Je ontwerpt regels zonder code te schrijven, bepaalt wat je kunt instellen (parameters) en wat je gaat meten (outputs). Aan het eind kun je een compleet **conceptueel model** opzetten, klaar om in hoofdstuk 3 te programmeren in NetLogo.

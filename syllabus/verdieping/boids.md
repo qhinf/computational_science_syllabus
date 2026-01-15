@@ -357,10 +357,10 @@ to go
   tick
 end
 
-to escape-from [predator]  ; Boid procedure
+to escape-from [threat]  ; Boid procedure
   ; Draai weg van roofdier
-  let escape-heading subtract-headings heading towards predator
-  face predator
+  let escape-heading subtract-headings heading towards threat
+  face threat
   rt 180  ; Draai 180 graden om
   
   ; Verhoog snelheid (vluchtrespons)

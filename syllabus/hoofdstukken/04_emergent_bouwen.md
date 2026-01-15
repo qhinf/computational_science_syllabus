@@ -1,3 +1,4 @@
+(hoofdstukken/04_emergent_bouwen)=
 # Emergent gedrag bouwen: mieren of Mexican wave
 
 Je hebt in hoofdstuk 3 geleerd hoe je turtles maakt en beweegt in NetLogo. Nu komt het échte werk: **emergent gedrag bouwen**. In dit hoofdstuk kies je één van twee klassieke ABM-voorbeelden – mieren die voedsel zoeken of een Mexican wave – en bouwt het stap voor stap. Je leert hoe simpele regels leiden tot verrassend complex groepsgedrag, hoe je parameters gebruikt om te experimenteren, en hoe je het emergente patroon zichtbaar maakt en verklaart. Aan het eind heb je een werkend model met duidelijk emergent gedrag.

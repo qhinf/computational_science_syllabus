@@ -1,3 +1,4 @@
+(hoofdstukken/01_modellen_emergent)=
 # Modellen en emergent gedrag
 
 Waarom gedragen mensen zich anders in een volle trein dan in een lege? Hoe kan een file ontstaan zonder dat er een ongeluk is? Waarom ontstaan er Chinese wijken in steden, ook als mensen niet perse bij elkaar willen wonen? Dit soort vragen beantwoorden met de wetenschappelijke methode is lastig: je kunt niet zomaar een pandemie uitbreken, file veroorzaken of een hele stad opnieuw inrichten. Hier komt **computational science** om de hoek kijken. In dit hoofdstuk leer je wat modellen zijn, waarom we ze gebruiken, en hoe simpele regels voor individuen kunnen leiden tot verrassend complex groepsgedrag – dat noemen we **emergent gedrag**. Je maakt kennis met de basisconcepten van Agent-Based Modeling (ABM) en leert hoe je goede onderzoeksvragen formuleert. Dit is de fundering voor alles wat volgt in deze module.

@@ -1,159 +1,320 @@
+(eindopdracht)=
 # Eindopdracht
 
-## De opdracht zelf
+Deze eindopdracht vormt de logische afsluiting van de zes hoofdstukken die je hebt doorlopen. Tijdens de hoofdstukken heb je stap voor stap gewerkt aan het begrijpen van agent-based modelling, het ontwerpen van modellen, het implementeren in NetLogo, het systematisch experimenteren en het valideren van je resultaten. In deze eindopdracht breng je al deze elementen samen in één compleet onderzoeksproject.
 
-In deze praktische opdracht ga je de wetenschappelijke methode toepassen op het modelleren van een fenomeen, zoals beschreven in hoofdstuk 3 van het [lesmateriaal](assets/Module_ABM_lesmateriaal.pdf).
+## Overzicht: Van theorie naar praktijk
 
-### Groepjes vormen en casus kiezen
+De eindopdracht volgt dezelfde structuur als de zes hoofdstukken:
 
-Je mag alleen of met z'n tweeën werken. Kies een casus uit de lijst {ref}`de-lijst`. Je gaat een heel nieuw model maken. Je mag ook zelf een casus bedenken. Het is dan wel nodig dat je met de docent overlegt of deze casus voldoende is om deze module mee af te sluiten.
+| Hoofdstuk | Onderwerp | Onderdeel eindopdracht |
+|-----------|-----------|------------------------|
+| {ref}`hoofdstukken/01_modellen_emergent` | Modellen en emergent gedrag | Casus kiezen en onderzoeksvraag formuleren |
+| {ref}`hoofdstukken/02_conceptueel_abm` | Conceptueel model maken | Conceptueel model ontwerpen met canvas |
+| {ref}`hoofdstukken/03_netlogo_basis` | NetLogo programmeren | Model implementeren in NetLogo |
+| {ref}`hoofdstukken/04_emergent_bouwen` | Emergent gedrag bouwen | Verificatie tijdens implementatie |
+| {ref}`hoofdstukken/05_experimenteren_data` | Experimenteren en data | Systematisch experimenteren met BehaviorSpace |
+| {ref}`hoofdstukken/06_verificatie_validatie_verslag` | Validatie en rapportage | Valideren en IMRAD-verslag schrijven |
 
-### Casus en onderzoeksvraag
+## Werkvorm
 
-Beschrijf wat je gaat modelleren en met welke doel aan de hand van de volgende vragen:
+Je werkt alleen of met z'n tweeën aan deze opdracht. Kies een casus uit {ref}`casussen` of bedenk zelf een onderwerp (overleg dit dan eerst met de docent).
 
-a.  Wat weet je van dit fenomeen? Voer eventueel het benodigde (literatuur-) onderzoek uit. 
+## Deel 1: Casus en onderzoeksvraag
 
-b.  Welke (deel van het) fenomeen wil je modelleren?
+*Zie {ref}`hoofdstukken/01_modellen_emergent` voor de achtergrond bij modellen en emergent gedrag.*
 
-c.   Waar hoop je achter te komen met behulp van jouw model?
+### Wat ga je onderzoeken?
 
-### Model ontwerpen
+Beschrijf helder wat je gaat modelleren en waarom. Beantwoord de volgende vragen:
 
-Ontwerp je model aan de hand van de onderstaande vragen. Geef steeds aan welke overwegingen en keuzes je hebt gemaakt. 
+a. **Context:** Wat weet je al van dit fenomeen? Voer eventueel literatuuronderzoek uit. Welke factoren spelen een rol?
 
-Voorbeeld:
+b. **Afbakening:** Welk deel van het fenomeen wil je modelleren? Wat laat je bewust buiten beschouwing en waarom?
 
-*De schapen kunnen zich voortplanten. Als twee schapen elkaar tegenkomen, dan is er een kans van 20% dat er een nieuw schaap ontstaat. We hebben besloten om het geslacht van de schapen niet te modelleren omdat dat in dit geval niet relevant is.*
+c. **Onderzoeksvraag:** Wat wil je te weten komen met je model? Formuleer een concrete, beantwoordbare onderzoeksvraag.
 
-De eerste twee vragen zijn alleen relevant als je een nieuw model ontwerpt.
+```{admonition} Voorbeeld onderzoeksvraag
+:class: tip
+"Hoe beïnvloedt het aantal uitgangen en de breedte van de uitgangen de evacuatietijd van een gebouw met 500 personen?"
 
-a.  Wat zijn de voornaamste soorten agents die betrokken zijn bij dit fenomeen?
+Deze vraag is concreet (aantal uitgangen, breedte, evacuatietijd), meetbaar (tijd in seconden) en gericht op een specifiek scenario (gebouw, 500 personen).
+```
 
-b.  In wat voor omgeving functioneren deze agents? Zijn er ook omgevingsagents aanwezig?
+## Deel 2: Conceptueel model
 
-c.   Welke eigenschappen hebben de agents? (Beschrijf per type agent.)
+*Zie {ref}`hoofdstukken/02_conceptueel_abm` voor uitleg over het conceptueel canvas.*
 
-d.  Welk gedrag vertonen de agents? (Beschrijf per type agent.) 
+### Het canvas invullen
 
-e.  Welke interacties hebben de agents onderling? En met de omgeving?
+Ontwerp je model systematisch met behulp van het 9-velden canvas dat je in hoofdstuk 2 hebt leerd kennen:
 
-f.   Als je dit fenomeen in discrete tijdseenheden zou beschrijven, wat gebeurt er dan in elke tijdseenheid (d.w.z. bij elke tik van de klok) en in welke volgorde?
+1. **Agents:** Welke soorten agents zijn er? Wat zijn hun eigenschappen?
+2. **Omgeving:** Hoe ziet de wereld eruit? Zijn er omgevingsagents (patches)?
+3. **Gedrag:** Wat doen agents op elk moment (elke tick)?
+4. **Interacties:** Hoe beïnvloeden agents elkaar en de omgeving?
+5. **Parameters:** Welke waarden kun je aanpassen (sliders, switches)?
+6. **Initialisatie:** Hoe ziet de beginsituatie eruit?
+7. **Inputs:** Welke externe gegevens of instellingen heb je nodig?
+8. **Outputs:** Wat meet en visualiseer je?
+9. **Tijd:** Wat gebeurt er elke tick en in welke volgorde?
 
-### Model implementeren
+**Belangrijk:** Onderbouw je keuzes! Leg uit *waarom* je bepaalde eigenschappen wel of niet meeneemt.
 
-Beschrijf in detail (eventueel met pseudocode) de eigenschappen, het gedrag en de interacties van alle (omgevings-) agents. Beschrijf hoe de tijd verloopt in het model en wat de volgorde van gebeurtenissen is. Met andere woorden: geef aan hoe de *setup*- en *go*-procedures eruit zullen zien.
+```{admonition} Voorbeeld onderbouwing
+:class: tip
+"De schapen kunnen zich voortplanten. Als twee schapen elkaar tegenkomen, dan is er een kans van 20% dat er een nieuw schaap ontstaat. We hebben besloten om het geslacht van de schapen niet te modelleren omdat dat in dit geval niet relevant is voor de populatiedynamiek die we willen onderzoeken."
+```
 
-Implementeer je model in NetLogo. Doe niet te veel tegelijk: schrijf de code stukje voor stukje en blijf testen (verificatie)!
+### PO-mijlpaal uit hoofdstuk 2
 
-### Model valideren
+Gebruik de checklist uit de PO-mijlpaal van {ref}`hoofdstukken/02_conceptueel_abm` om te controleren of je conceptuele model compleet is.
 
-Valideer je model aan de hand van de volgende vragen:
+## Deel 3: Implementatie in NetLogo
 
-a.  Microvalidatie: in hoeverre komt het gedrag van de agents overeen met het gedrag dat in werkelijkheid wordt geobserveerd? Als het niet (helemaal) overeenkomt, zijn de verschillen dan relevant voor je onderzoeksvraag?
+*Zie {ref}`hoofdstukken/03_netlogo_basis` en {ref}`hoofdstukken/04_emergent_bouwen` voor NetLogo-programmering en verificatie.*
 
-b.  Macrovalidatie: in hoeverre komt het gedrag van de het systeem als geheel in jouw model overeen met het gedrag dat in werkelijkheid wordt geobserveerd. Als het niet (helemaal) overeenkomt, zijn de verschillen dan relevant voor je onderzoeksvraag?
+### Van ontwerp naar code
 
-### Experiment, analyse en conclusie
+Beschrijf eerst in detail (eventueel met pseudocode) hoe je `setup`- en `go`-procedures eruit komen te zien:
 
-Gebruik je model om het antwoord op jouw onderzoeksvraag te vinden aan de hand van de volgende punten:
+- Welke agents creëer je in `setup`?
+- Welke eigenschappen stel je in?
+- Wat gebeurt er in `go`, en in welke volgorde?
 
-a.  Beschrijf gedetailleerd hoe het experiment eruit ziet. Als je gebruik maakt van *BehaviorSpace*, beschrijf dan hoeveel experimenten er zijn uitgevoerd en met welke parameters.
+### Stapsgewijs implementeren
 
-b.  Vermeld je uitkomsten op een geschikte manier (beschrijvend, m.b.v. een tabel, een grafiek enz.)
+Bouw je model **incrementeel** op:
 
-c.   Analyseer de uitkomsten. 
+1. Begin met een minimale versie (bijvoorbeeld: alleen agents plaatsen)
+2. Voeg stap voor stap gedrag toe
+3. **Test na elke toevoeging** of het werkt zoals verwacht (verificatie!)
+4. Gebruik `print`-statements of monitors om gedrag te controleren
+5. Maak screenshots van tussenstappen voor je verslag
 
-d.  Beantwoord jouw onderzoeksvraag.
+```{admonition} Verificatie tijdens implementeren
+:class: warning
+Ga niet te snel! Als je te veel code in één keer schrijft, is het moeilijk om fouten te vinden. Test regelmatig met kleine experimenten of je code doet wat je verwacht. Dit is **verificatie**: controleren of de code correct is.
+```
 
-### Reflectie
+### PO-mijlpaal uit hoofdstukken 3 en 4
 
-Reflecteer op het modeleerproces aan de hand van de volgende vragen:
+Gebruik de checklists uit {ref}`hoofdstukken/03_netlogo_basis` en {ref}`hoofdstukken/04_emergent_bouwen` om te controleren of je implementatie compleet en correct is.
 
-a.  Wat ging goed? Wat kon beter? 
+## Deel 4: Systematisch experimenteren
 
-b.  Heb je aannames gedaan, die je de volgende keer toch anders zou doen? Welke aspecten van het model wil je veranderen?
+*Zie {ref}`hoofdstukken/05_experimenteren_data` voor BehaviorSpace en data-analyse.*
 
-c.   Heb je in het begin van bepaalde zaken (agents of gedrag) afgezien, terwijl je nu denkt dat je ze toch had moeten meenemen in het model? Maak een *wishlist* van de zaken die je in een volgende versie van het model zou willen toevoegen, verwijderen en / of wijzigen.
+### Experiment opzetten
 
-## Inleveren: Model en documentatie
+Gebruik **BehaviorSpace** om systematisch te experimenteren:
 
-·   Een document met uitwerkingen van de hoofdvragen 1 t/m 6 uit de opdracht. Het document maak je in Word met een opmaak met kopteksten, inhoudsopgave. Wanneer je externe bronnen, zoals websites of literatuur gebruikt, dan vermeld je deze ook. Voorzie je document van paginanummering.
+1. **Bepaal je onafhankelijke variabelen:** Welke parameters ga je variëren? Welke waarden neem je?
+2. **Bepaal je afhankelijke variabelen:** Wat ga je meten? Hoe registreer je dit in NetLogo?
+3. **Herhalingen:** Hoeveel runs doe je per parameterwaarde? (Meestal minimaal 10-20 voor betrouwbare resultaten)
+4. **Stopcriterium:** Wanneer stopt een run? (Na x ticks, of bij een bepaalde conditie?)
 
-·   Het NetLogo-bestand van je model
+```{admonition} Voorbeeld experimentopzet
+:class: tip
+**Onderzoeksvraag:** Hoe beïnvloedt het aantal predators de stabiliteit van de schaapspopulatie?
 
-## De beoordeling
-Deze eindopdracht wordt beoordeeld aan de hand van een rubric. Een rubric is een manier om een grotere, praktische opdracht te beoordelen aan de hand van criteria. Met de [tabellen in dit document](assets/Computational_Science_nakijkmodel.pdf) kun je zelf al een inschatting maken hoe je eindopdracht gewaardeerd wordt. Heb je ergens twijfel of vragen over, aarzel niet ze te stellen aan de docent.
+**Onafhankelijke variabele:** aantal-predators (variërend van 0 tot 10 in stappen van 2)
 
-Je kunt maximaal 40 punten scoren. Je hebt dan een 10. Met een score van 20 punten heb je een 5,5.
+**Afhankelijke variabele:** standaarddeviatie van aantal schapen over de laatste 100 ticks
 
-(de-lijst)=
-## De casussen
+**Herhalingen:** 20 runs per waarde
 
-### Verkeersplein
+**Stopcriterium:** 500 ticks
+```
 
-Bij een kruispunt met stoplichten ontstaan er regelmatig files tijden het spitsuur. De gemeente overweegt om het kruispunt te vervangen door een verkeersplein.
+### Data analyseren
 
- Zou dat de doorstroming van het verkeer ten goede komen?
+Verwerk je BehaviorSpace-resultaten:
 
-### Leven op Mars
+1. **Importeer data** in een spreadsheet of Python
+2. **Maak grafieken** die je resultaten helder tonen
+3. **Analyseer patronen:** Wat zie je? Zijn er trends, drempelwaarden, of onverwachte effecten?
 
-Kunnen mensen echt op Mars leven? 
+### PO-mijlpaal uit hoofdstuk 5
 
-NASA [^Nasa]
-en SpaceX[^SpaceX]
-denken van wel. Het idee is dat mensen op den duur zelfvoorzienend op Mars zouden kunnen leven, zonder afhankelijk te zijn van bevoorrading vanaf de Aarde.
+Gebruik de checklist uit {ref}`hoofdstukken/05_experimenteren_data` om te controleren of je experiment en analyse compleet zijn.
 
+## Deel 5: Validatie
 
-Stel dat er geschikt onderdak geregeld is. Wat is er dan nodig om voldoende water, lucht en voedsel te produceren om te overleven? Is het mogelijk om zelfvoorzienend te worden?
+*Zie {ref}`hoofdstukken/06_verificatie_validatie_verslag` voor validatietechnieken.*
 
-### Wachtrij
+### Micro- en macrovalidatie
 
-Een bank wil een nieuwe filiaal openen. Met het oog op de klantenvriendelijkheid wil men de service in het filiaal zo organiseren dat de wachttijd voor de klanten zo klein mogelijk is.
- Bij een balie kan men verschillende soorten zaken doen. Sommige daarvan zijn vrij snel klaar (bijvoorbeeld saldo opvragen, geld storten) en duren maximaal 5 minuten. Andere zaken duren wat langer (bijvoorbeeld een rekening openen of opheffen) en dat duurt tussen de 3 en 10 minuten. Ten slotte zijn er zaken die lang duren en waarvoor men twee keer moet komen (bijvoorbeeld het regelen van een lening of hypotheek). In dat geval duurt elke bezoek tussen de 5 en 20 minuten.
+Controleer of je model realistisch is:
 
-Hoe kunnen de diensten het beste over de balies worden verdeeld? En wat betekent dit voor de wachtrijen van de klanten?
+a. **Microvalidatie:** Komt het gedrag van individuele agents overeen met de werkelijkheid? 
+   - Doen schapen realistisch wat echte schapen doen?
+   - Als er verschillen zijn, zijn die relevant voor je onderzoeksvraag?
 
-### Kaaspakhuis
+b. **Macrovalidatie:** Komt het gedrag van het systeem als geheel overeen met de werkelijkheid?
+   - Zie je patronen die je ook in de echte wereld ziet?
+   - Zijn de uitkomsten in de buurt van bekende waarden of observaties?
 
-Kaas wordt na de productie opgeslagen in kaaspakhuizen om te rijpen en in afwachting van verkoop. Hoe ouder de kaas, des te hoger de opbrengt, maar opslag in een pakhuis brengt ook kosten met zich mee.
+```{admonition} Als validatie niet perfect is
+:class: note
+Een model hoeft niet perfect de werkelijkheid te weerspiegelen. Belangrijk is dat je:
+1. Bewust bent van de verschillen
+2. Kunt beredeneren of deze verschillen invloed hebben op je onderzoeksvraag
+3. Dit expliciet benoemt in je verslag
+```
 
-Een kleine kaasproducent wil zijn verkoopstrategie optimaliseren, ofwel zijn winst maximaliseren. Op zijn boerderij worden elke maand 25 boerenkazen geproduceerd en in zijn pakhuis heeft hij ruimte voor 400 kazen. Als het pakhuis vol is, kan hij kiezen: hij zet de productie stop, of hij geeft een aantal kazen aan een goed doel. Hij kan kiezen uit een aantal verkoopkanalen. Hij kan leveren aan een biologische winkel waar hij langlopende contracten mee kan sluiten, of aan een streekmarkt met maandelijkse contracten waar hij hogere prijzen kan rekenen.
+### PO-mijlpaal uit hoofdstuk 6
 
-Hoe zit een optimale verkoopstrategie eruit?
+Gebruik de validatiechecklist uit {ref}`hoofdstukken/06_verificatie_validatie_verslag` om je validatie compleet te maken.
 
-### Aardappels
+## Deel 6: Conclusie en reflectie
 
-Een biologische aardappelteler wil zijn winst maximaliseren. Daartoe moet hij rekening houden met kosten die hij maakt voor pootgoed, mest, het verwijderen van aangetaste planten etc., maar ook met plagen en ziektes die zich makkelijk verspreiden als aardappels te dicht bij elkaar zijn geplant. Hij kan alleen aardappels van goede kwaliteit verkopen. De rest gooit hij weg.
+### Onderzoeksvraag beantwoorden
 
-Wat is de optimale strategie voor het planten en telen van aardappels?
+Geef een helder antwoord op je onderzoeksvraag:
 
-### Brand op school
+- Wat zijn je belangrijkste bevindingen?
+- Wat zeggen je data hierover?
+- Zijn er verassende resultaten?
 
-Bij brand in een school of een ander gebouw waar zich veel mensen bevinden, is het belangrijk dat mensen tijdig gealarmeerd kunnen worden om snel het gebouw te kunnen verlaten. Mensen die niet op tijd naar buiten kunnen komen lopen gevaar om dit niet te overleven.
+### Reflectie op het proces
 
-De leiding van jouw school heeft advies nodig over het aantal alarmen en de positie van alarmen en nooduitgangen om de begane grond goed te kunnen evacueren. Idealiter wordt er ook rekening gehouden met het evacueren van mensen in een rolstoel.
+Reflecteer kritisch op je werk:
 
-Wat is op basis van jouw model het advies?
+a. **Wat ging goed? Wat kon beter?**
+   - Waar ben je tevreden over?
+   - Waar liep je tegenaan?
 
-### Weerstand
+b. **Modelaannames heroverwegen**
+   - Welke aannames heb je gemaakt?
+   - Zou je die nu anders doen?
+   - Waarom wel/niet?
 
-Maak een model van elektrische weerstand. Controleer of de volgende natuurkundige wetten kloppen:
+c. **Wishlist voor volgende versie**
+   - Wat zou je willen toevoegen?
+   - Wat zou je willen verwijderen of veranderen?
+   - Waarom zou dat het model verbeteren?
 
-1. Wet van Ohm voor serieschakeling:
+## Het verslag: IMRAD-structuur
 
-$$
-R_v = \sum^n_{i=1}R_i
-$$
+Je eindopdracht lever je in als een wetenschappelijk verslag volgens de **IMRAD-structuur** die je in {ref}`hoofdstukken/06_verificatie_validatie_verslag` hebt geleerd:
 
-2. Wet van Ohm voor parallelschakeling: 
+1. **Introduction:** Casus, context, onderzoeksvraag (Deel 1)
+2. **Method:** Conceptueel model, implementatie, experimentopzet (Deel 2, 3, 4)
+3. **Results:** Data en grafieken uit je experimenten (Deel 4)
+4. **Analysis:** Interpretatie van resultaten (Deel 4)
+5. **Discussion:** Validatie, beperkingen, reflectie (Deel 5, 6)
+6. **Conclusion:** Antwoord op onderzoeksvraag (Deel 6)
 
-$$
-\frac{1}{R}=\sum^n_{i=1}\frac{1}{R_i}
-$$
+Gebruik de IMRAD-template en checklist uit {ref}`hoofdstukken/06_verificatie_validatie_verslag` om je verslag te structureren.
 
-------
+## Checklist eindopdracht
 
-[^Nasa]: https://www.nasa.gov/image-article/nasas-journey-mars/
+Controleer voor inleveren of je alles hebt:
 
-[^SpaceX]: http://www.spacex.com/mars
+### Deel 1: Casus en onderzoeksvraag
+- [ ] Context en achtergrondonderzoek beschreven
+- [ ] Afbakening: duidelijk wat wel/niet wordt gemodelleerd
+- [ ] Concrete, beantwoordbare onderzoeksvraag geformuleerd
+- [ ] Bronnen vermeld als je literatuuronderzoek hebt gedaan
+
+### Deel 2: Conceptueel model
+- [ ] 9-velden canvas volledig ingevuld
+- [ ] Agents en hun eigenschappen beschreven
+- [ ] Omgeving beschreven (patches, topologie)
+- [ ] Gedrag per agent-type uitgewerkt
+- [ ] Interacties tussen agents en omgeving beschreven
+- [ ] Parameters en hun waarden benoemd
+- [ ] Initialisatie (setup) beschreven
+- [ ] Inputs en outputs gespecificeerd
+- [ ] Tijdverloop (wat gebeurt elke tick) uitgelegd
+- [ ] **Alle keuzes onderbouwd** (waarom wel/niet meenemen?)
+
+### Deel 3: Implementatie
+- [ ] Pseudocode of gedetailleerde beschrijving van `setup` en `go`
+- [ ] NetLogo-code geschreven en werkend
+- [ ] Code is overzichtelijk en voorzien van commentaar
+- [ ] Verificatiestappen beschreven in verslag
+- [ ] Screenshots van tussenstappen toegevoegd
+- [ ] Model doet wat het zou moeten doen (geen bugs)
+
+### Deel 4: Experimenteren
+- [ ] BehaviorSpace-experiment opgezet
+- [ ] Onafhankelijke variabelen benoemd met bereik en stapgrootte
+- [ ] Afhankelijke variabelen benoemd (wat wordt gemeten?)
+- [ ] Voldoende herhalingen uitgevoerd (≥10-20 runs)
+- [ ] Stopcriterium vastgesteld
+- [ ] Data geëxporteerd en geanalyseerd
+- [ ] Grafieken gemaakt die resultaten helder tonen
+- [ ] Patronen in data beschreven en geïnterpreteerd
+
+### Deel 5: Validatie
+- [ ] Microvalidatie: gedrag agents vergeleken met werkelijkheid
+- [ ] Macrovalidatie: systeemgedrag vergeleken met werkelijkheid
+- [ ] Verschillen benoemd en besproken
+- [ ] Relevantie van verschillen voor onderzoeksvraag beargumenteerd
+- [ ] Beperkingen van model expliciet genoemd
+
+### Deel 6: Conclusie en reflectie
+- [ ] Onderzoeksvraag beantwoord met onderbouwing uit resultaten
+- [ ] Belangrijkste bevindingen samengevat
+- [ ] Reflectie op proces: wat ging goed/beter?
+- [ ] Modelaannames heroverwogen
+- [ ] Wishlist voor volgende versie gemaakt
+
+### Verslag (IMRAD)
+- [ ] Introduction: context, onderzoeksvraag, relevantie
+- [ ] Method: conceptueel model, implementatie, experiment
+- [ ] Results: data en grafieken
+- [ ] Analysis: interpretatie van resultaten
+- [ ] Discussion: validatie, beperkingen, reflectie
+- [ ] Conclusion: antwoord op onderzoeksvraag
+- [ ] Bronnen vermeld (websites, literatuur, externe data)
+- [ ] Inhoudsopgave aanwezig
+- [ ] Paginanummering aanwezig
+- [ ] Kopteksten gebruikt voor structuur
+
+### Inleveren
+- [ ] Verslag als Word- of PDF-document
+- [ ] NetLogo-bestand (.nlogo) van je model
+- [ ] Eventuele aanvullende bestanden (databestanden, grafieken)
+
+## Inleveren
+
+Lever de volgende bestanden in:
+
+1. **Verslag** in Word of PDF met:
+   - IMRAD-structuur
+   - Inhoudsopgave
+   - Paginanummering
+   - Bronvermelding
+   
+2. **NetLogo-bestand** (.nlogo) van je werkende model
+
+3. **Eventuele aanvullende bestanden** zoals:
+   - Ruwe data uit BehaviorSpace (CSV)
+   - Grafieken als losse bestanden
+   - Andere relevante documenten
+
+## Beoordeling
+
+Deze eindopdracht wordt beoordeeld aan de hand van een rubric. Een rubric is een manier om een grotere, praktische opdracht te beoordelen aan de hand van criteria. 
+
+Je kunt maximaal **40 punten** scoren, wat overeenkomt met een 10. Met een score van **20 punten** heb je een 5,5.
+
+De rubric beoordeelt onder andere:
+
+- **Onderzoeksvraag en afbakening** (is de vraag concreet en beantwoordbaar?)
+- **Conceptueel model** (is het canvas volledig en zijn keuzes onderbouwd?)
+- **Implementatie** (werkt de code, is deze overzichtelijk?)
+- **Experimenteren** (is het experiment systematisch opgezet?)
+- **Data-analyse** (zijn grafieken helder en is de interpretatie correct?)
+- **Validatie** (is kritisch gekeken naar realisme van het model?)
+- **Verslag** (is de structuur helder en de taal wetenschappelijk?)
+- **Reflectie** (is kritisch nagedacht over proces en model?)
+
+Heb je vragen over de beoordeling? Vraag de docent naar het volledige beoordelingsmodel.
+
+## Tot slot
+
+Deze eindopdracht is het moment waarop je laat zien dat je agent-based modelling beheerst: van onderzoeksvraag tot werkend model, van experiment tot wetenschappelijk verslag. Veel succes!

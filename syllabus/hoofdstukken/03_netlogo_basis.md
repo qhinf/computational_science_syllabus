@@ -1,3 +1,4 @@
+(hoofdstukken/03_netlogo_basis)=
 # NetLogo basis: wereld, patches, turtles
 
 Je hebt in hoofdstuk 1 en 2 geleerd hoe je een fenomeen ontleedt in agents, regels en parameters. Nu wordt het tijd om dit te bouwen! In dit hoofdstuk maak je kennis met **NetLogo**, een programmeertaal speciaal ontworpen voor Agent-Based Modeling. Je leert de basis: hoe maak je agents (turtles), hoe beweeg je ze, hoe stel je de omgeving in (patches), en hoe meet je wat er gebeurt. Aan het eind bouw je je eerste werkende model: een random walk met metingen. Dit is de fundering voor alle modellen die volgen.

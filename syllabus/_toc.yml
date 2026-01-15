@@ -25,3 +25,4 @@ parts:
 - caption: De eindopdracht
   chapters:
     - file: eindopdracht
+    - file: casussen
