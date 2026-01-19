@@ -53,9 +53,9 @@ sphinx:
     # een volgende editie.
     myst_substitutions:
       versie: "Globaal afgehandeld. Niet wijzigen."
-      deadline: "donderdag 28 maart, 16:00"
-      deadline_uitstel_aanvragen: "maandag 18 maart, 16:00"
-      deadline_uitstel: "donderdag 16 april, 16:00"
+      deadline: "donderdag 19 maart, 16:00"
+      deadline_uitstel_aanvragen: "maandag 5 april, 16:00"
+      deadline_uitstel: "donderdag 9 april, 16:00 (LET OP: Niet mogelijk voor examenleerlingen)"
       docent: "Pieter van Engelen-san"
       docent_email: "P punt vanEngelen apenstaartje quadraam punt nl"
 
