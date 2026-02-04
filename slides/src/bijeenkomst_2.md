@@ -87,13 +87,11 @@ Dit is het moment om misvattingen uit hoofdstuk 1 te adresseren. Vraag studenten
 
 "Een agent weet wat er in het hele systeem gebeurt"
 
-<!-- .element: class="fragment" -->
-
 **Nee!** Agents zijn **lokaal**
-
-Een mier weet niet waar het nest is, alleen of ze een spoor ruikt
-
 <!-- .element: class="fragment" -->
+_Een mier weet niet waar het nest is, alleen of ze een spoor ruikt_
+
+<!-- .element: class="fragment" style="font-size: 0.8em"-->
 
 Notes:
 Dit is cruciaal. Agents hebben beperkte informatie - alleen wat ze direct waarnemen. Dit is anders dan traditionele modellen waar je alles overziet.
@@ -104,13 +102,13 @@ Dit is cruciaal. Agents hebben beperkte informatie - alleen wat ze direct waarne
 
 "Emergent gedrag = gedrag van één agent"
 
-<!-- .element: class="fragment" -->
 
 **Nee!** Emergent gedrag ontstaat op **systeemniveau**
-
-Het staat niet in de regels van één agent
-
 <!-- .element: class="fragment" -->
+
+_Het staat niet in de regels van één agent_
+
+<!-- .element: class="fragment" style="font-size: 0.8em"-->
 
 Notes:
 Een mier die beweegt = niet emergent
@@ -124,13 +122,13 @@ Vraag: "Kan iemand een voorbeeld geven uit hun gekozen fenomeen?"
 
 "Een goed model moet zo gedetailleerd mogelijk zijn"
 
-<!-- .element: class="fragment" -->
-
 **Nee!** Een goed model is zo **eenvoudig als mogelijk**
 
-Voor de vraag die je wilt beantwoorden
-
 <!-- .element: class="fragment" -->
+
+_voor de vraag die je wilt beantwoorden_
+
+<!-- .element: class="fragment" style="font-size: 0.8em"-->
 
 Notes:
 Herhaal de gouden regel: "All models are wrong, but some are useful". Je moet bewust versimpelen.
@@ -176,6 +174,14 @@ Kies een simpel, herkenbaar voorbeeld. Werk het stap voor stap uit met input van
 
 Wat zijn de agents in ons model?
 
+**Agents:** Voetgangers en auto's
+
+<!-- .element: class="fragment" -->
+Simpel beginnen!</br>
+(Later kun je altijd uitbreiden)
+
+<!-- .element: class="fragment" style="font-size:0.6em" -->
+
 Notes:
 Laat studenten roepen. Antwoord: individuele voetgangers en auto's.
 
@@ -183,23 +189,23 @@ Waarschuw: begin simpel! Niet meteen "fietsen, trams, honden, politie". Focus op
 
 ---
 
-**Agents:** Voetgangers en auto's
-
-<!-- .element: class="fragment" -->
-
-Simpel beginnen!
-
-<!-- .element: class="fragment" -->
-
-(Later kun je altijd uitbreiden)
-
-<!-- .element: class="fragment" -->
-
----
-
 ## Vraag 2: Eigenschappen?
 
 Welke eigenschappen hebben deze agents?
+
+**Voetganger:**
+- Positie (x, y)
+- Snelheid
+- `wil-oversteken?` (waar/onwaar)
+
+<!-- .element: class="fragment" style="border: 1px solid black" -->
+
+**Auto:**
+- Positie (x, y)
+- Snelheid
+- `gestopt?` (waar/onwaar)
+
+<!-- .element: class="fragment" style="border: 1px solid black"-->
 
 Notes:
 Laat studenten brainstormen. Schrijf suggesties op. Dan: welke zijn ECHT nodig?
@@ -212,70 +218,43 @@ Niet nodig: kleur haar, favoriete muziek, humeur (tenzij je specifiek gedrag daa
 
 ---
 
-**Voetganger:**
-- Positie (x, y)
-- Snelheid
-- `wil-oversteken?` (waar/onwaar)
-
-<!-- .element: class="fragment" -->
-
-**Auto:**
-- Positie (x, y)
-- Snelheid
-- `gestopt?` (waar/onwaar)
-
-<!-- .element: class="fragment" -->
-
----
-
 ## Vraag 3: Gedrag?
 
 Wat kunnen de agents **doen**?
-
-Notes:
-Dit zijn acties/procedures. Laat studenten roepen.
-
----
 
 **Voetganger:**
 - Beweeg naar zebrapad
 - Check of auto's stoppen
 - Steek over (of wacht)
 
-<!-- .element: class="fragment" -->
+<!-- .element: class="fragment" style="border: 1px solid black"-->
 
 **Auto:**
 - Rijd vooruit
 - Rem als voetganger bij zebrapad
 - Versnel weer na doorgang
 
-<!-- .element: class="fragment" -->
+<!-- .element: class="fragment" style="border: 1px solid black"-->
+Notes:
+Dit zijn acties/procedures. Laat studenten roepen.
 
 ---
+
 
 ## Vraag 4: Omgeving?
 
 Waar speelt dit zich af?
 
-Notes:
-Dit is de "wereld" waarin agents leven. In NetLogo vaak een grid, maar kan ook continue ruimte zijn.
-
----
-
-**Omgeving:**
-
-Een weg met een zebrapad
-
+Een weg met een zebrapad<br/>
 Mogelijk: verkeerslichten, stoep
 
-<!-- .element: class="fragment" -->
+<!-- .element: class="fragment" style="border: 1px solid black"-->
 
 In NetLogo: een 2D-grid met wegvakken en zebrapad-vakken
 
-<!-- .element: class="fragment" -->
-
+<!-- .element: class="fragment" style="border: 1px solid black"-->
 Notes:
-Belangrijk: de omgeving kan eigenschappen hebben! Bijv. een vakje kan "zebrapad" of "weg" zijn.
+Dit is de "wereld" waarin agents leven. In NetLogo vaak een grid, maar kan ook continue ruimte zijn.
 
 ---
 
@@ -283,25 +262,19 @@ Belangrijk: de omgeving kan eigenschappen hebben! Bijv. een vakje kan "zebrapad"
 
 Hoe reageren agents op elkaar en de omgeving?
 
-Notes:
-Dit is vaak het interessantste deel. Hier komen de regels die leiden tot emergent gedrag.
-
----
-
 **Interacties:**
 
 - Auto ziet voetganger → remt
 - Voetganger ziet gestopte auto → steekt over
 - Auto ziet geen voetganger meer → versnelt
 
-<!-- .element: class="fragment" -->
+<!-- .element: class="fragment" style="border: 1px solid black"-->
 
 **Emergent gedrag:** File kan ontstaan als veel voetgangers oversteken
 
 <!-- .element: class="fragment" -->
-
 Notes:
-Het emergente gedrag is NIET geprogrammeerd - het ontstaat uit de regels van individuele agents. Dit is de magie!
+Dit is vaak het interessantste deel. Hier komen de regels die leiden tot emergent gedrag.
 
 ---
 
@@ -315,6 +288,7 @@ Het emergente gedrag is NIET geprogrammeerd - het ontstaat uit de regels van ind
 | Omgeving | 2D-grid met weg en zebrapad |
 | Interacties | Auto reageert op voetganger, voetganger op auto |
 
+<!-- .element: style="font-size: 0.6em" -->
 Notes:
 Dit is een compleet conceptueel model. Nog niet geprogrammeerd, maar wel concreet genoeg om te gaan bouwen in NetLogo.
 
@@ -364,6 +338,7 @@ FENOMEEN: [beschrijf in 1 zin]
 
 VERWACHT EMERGENT GEDRAG: [wat zou kunnen ontstaan?]
 ```
+<!-- .element: style="font-size: 0.5em" -->
 
 Notes:
 Dit sjabloon kunnen ze invullen op papier of laptop. Zorg dat iedereen het heeft.
@@ -410,107 +385,6 @@ Typische vragen:
 
 ---
 
-## Presentatie checklist
-
-Vertel ons:
-
-1. Welk **fenomeen** modeleer je?
-2. Wat zijn je **agents**?
-3. Belangrijkste **eigenschappen** en **gedrag**?
-4. Welk **emergent gedrag** verwacht je?
-
-Notes:
-Dit houdt presentaties gestructureerd en beknopt. Focus op de kern.
-
----
-
-## Groep 1
-
-Ga je gang!
-
-Notes:
-Laat eerste groep presenteren. Applaus na afloop. Vraag wie een vraag heeft. Faciliteer discussie, maar houd het kort (max 2 minuten vragen).
-
----
-
-## Groep 2
-
-<!-- Herhaal voor elk groepje -->
-
----
-
-## Groep 3
-
----
-
-## Groep 4
-
----
-
-## Groep 5
-
----
-
-## Groep 6
-
-Notes:
-Pas het aantal slides aan op basis van je klasgrootte. Voor elke groep: korte presentatie + 1-2 vragen.
-
-***
-
-## Peer feedback ronde
-
-Nu gaan we elkaar **scherper** maken
-
-**Doel:** Help elkaar om modellen beter te maken
-
-<!-- .element: class="fragment" -->
-
-Notes:
-Peer feedback is krachtig. Leg uit: dit is niet kritiek om te kraken, maar om elkaar te helpen sterker te worden.
-
----
-
-## Feedback geven: WWWH methode
-
-**W**at werkt er goed?
-
-**W**at zou beter kunnen?
-
-**W**at mis je nog?
-
-**H**oe zou je het aanpakken?
-
-<!-- .element: class="fragment" -->
-
-Notes:
-WWWH = What works, What's missing, What to improve, How to do it.
-
-Moedig constructieve feedback aan: begin met iets positiefs, dan verbeterpunten.
-
----
-
-## Opdracht: feedback exchange
-
-**15 minuten**
-
-1. Wissel je model uit met een ander groepje
-2. Lees hun model kritisch
-3. Geef feedback via WWWH
-4. Ontvang feedback op jouw model
-
-<!-- .element: class="fragment" -->
-
-Notes:
-Laat groepjes wisselen (bijv. groep 1 ↔ groep 2, groep 3 ↔ groep 4, etc.). Ze kunnen feedback opschrijven of mondeling geven.
-
-Loop rond, help faciliteren. Moedig kritische vragen aan:
-- "Hoe weet een agent dat?"
-- "Wat als er 1000 agents zijn in plaats van 10?"
-- "Hebben ze dit detail echt nodig?"
-
----
-
 ## Veelvoorkomende feedback punten
 
 **Te complex:** Probeer te versimpelen
@@ -521,38 +395,8 @@ Loop rond, help faciliteren. Moedig kritische vragen aan:
 
 **Geen emergent gedrag:** Wat zou er kunnen ontstaan uit deze regels?
 
-<!-- .element: class="fragment" -->
-
 Notes:
 Dit zijn patronen die je vaak ziet. Gebruik ze als hulpmiddel tijdens feedback geven.
-
----
-
-## Start feedback sessie!
-
-**15 minuten**
-
-Notes:
-Zet timer. Studenten wisselen modellen en geven elkaar feedback. Faciliteer actief.
-
-***
-
-## Reflectie: wat hebben we geleerd?
-
-Wat was **moeilijk** aan het maken van een conceptueel model?
-
-<!-- .element: class="fragment" -->
-
-Wat was **verrassend**?
-
-<!-- .element: class="fragment" -->
-
-Notes:
-Open discussie. Typische antwoorden:
-- "Kiezen wat belangrijk is en wat niet"
-- "Concreet maken zonder te complex te worden"
-- "Bedenken hoe agents lokaal beslissen zonder alles te weten"
-- "Voorspellen wat emergent gedrag zou zijn"
 
 ---
 
@@ -562,19 +406,19 @@ Open discussie. Typische antwoorden:
 
 → Vraag jezelf af: heb ik dit nodig voor mijn onderzoeksvraag?
 
-<!-- .element: class="fragment" -->
+<!-- .element: class="fragment" style="font-size: 0.7em"-->
 
 **Emergent vs. geprogrammeerd:** Zit het in één agent of ontstaat het?
 
 → Test: staat dit gedrag in de regels van één agent? Zo ja → niet emergent
 
-<!-- .element: class="fragment" -->
+<!-- .element: class="fragment" style="font-size: 0.7em"-->
 
 **Lokaliteit:** Hoe weet een agent iets?
 
 → Agents kennen alleen hun directe omgeving en eigenschappen
 
-<!-- .element: class="fragment" -->
+<!-- .element: class="fragment" style="font-size: 0.7em"-->
 
 Notes:
 Dit zijn de drie grote uitdagingen waar iedereen tegenaan loopt. Normaal en belangrijk om te herkennen!
@@ -690,54 +534,9 @@ Je weet nu:
 
 **3. Doe de NetLogo tutorial** (File → Models Library → Tutorial 1, 2, 3)
 
-**4. Lever in:** Je definitieve conceptuele model (gebruik het sjabloon)
-
-<!-- .element: class="fragment" -->
 
 Notes:
 Dit is serieuze voorbereiding. Zonder dit komen ze niet mee volgende week wanneer we gaan programmeren.
-
----
-
-## Deadline inleveren
-
-**Voor aanvang volgende bijeenkomst**
-
-Format: PDF of Markdown, upload naar de inlevermap
-
-Gebruik het sjabloon van vandaag
-
-<!-- .element: class="fragment" -->
-
-Notes:
-Wees streng op deadline - ze hebben dit nodig voor volgende week. Zonder conceptueel model kunnen ze niet gaan bouwen.
-
----
-
-## Checklist voor je inlevering
-
-- [ ] Fenomeen helder beschreven (2-3 zinnen)
-- [ ] Alle 5 vragen beantwoord
-- [ ] Eigenschappen zijn concreet (geen vage termen)
-- [ ] Gedrag is beschreven in acties
-- [ ] Interacties zijn expliciet gemaakt
-- [ ] Verwacht emergent gedrag benoemd
-
-Notes:
-Laat studenten deze checklist gebruiken voordat ze inleveren. Voorkomt onvolledige inleveringen.
-
----
-
-## Tips voor thuiswerken
-
-**Conceptueel model verfijnen:**
-- Lees de feedback nog eens door
-- Schrap onnodige details
-- Maak vage begrippen concreet
-- Test: kan iemand anders dit begrijpen?
-
-Notes:
-Moedig aan om kritisch naar eigen werk te kijken. Een goed conceptueel model is helder en minimaal.
 
 ---
 
@@ -765,14 +564,12 @@ Waarschuw: "Het kost 1-2 uur, maar het is essentieel."
 
 ## Volgende week
 
-**Fysieke bijeenkomst**
+**Online bijeenkomst**
 
-Hands-on: bouw je eerste NetLogo model
+Onderwerp: _bouw je eerste NetLogo model_
 
-<!-- .element: class="fragment" -->
-
-Neem mee:
-- Opgeladen laptop
+Zorg dat je klaar hebt:
+- Een werkende camera
 - NetLogo werkend
 - Je conceptueel model
 - Hoofdstuk 3 gelezen
