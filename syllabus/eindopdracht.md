@@ -194,7 +194,7 @@ c. **Wishlist voor volgende versie**
    - Wat zou je willen verwijderen of veranderen?
    - Waarom zou dat het model verbeteren?
 
-(samenwerken=)
+(samenwerken)=
 ## (Optioneel) Deel 7: Voor wanneer je samenwerkt
 Je mag bij deze module met z'n tweeën samenwerken. In dat geval moet je in het verslag aangeven:
 - Per persoon: een reflectie op wat je geleerd hebt *van* deze module.
