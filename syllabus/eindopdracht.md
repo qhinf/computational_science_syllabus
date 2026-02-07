@@ -18,7 +18,7 @@ De eindopdracht volgt dezelfde structuur als de zes hoofdstukken:
 
 ## Werkvorm
 
-Je werkt alleen of met z'n tweeën aan deze opdracht. Kies een casus uit {ref}`casussen` of bedenk zelf een onderwerp (overleg dit dan eerst met de docent).
+Je werkt alleen of met z'n tweeën aan deze opdracht. Wanneer je met z'n tweeën werkt, moet je een extra hoofdstuk aan je verslag toevoegen (zie {ref}`samenwerken`). Kies een casus uit {ref}`casussen` of bedenk zelf een onderwerp (overleg dit dan eerst met de docent).
 
 ## Deel 1: Casus en onderzoeksvraag
 
@@ -194,6 +194,12 @@ c. **Wishlist voor volgende versie**
    - Wat zou je willen verwijderen of veranderen?
    - Waarom zou dat het model verbeteren?
 
+(samenwerken=)
+## (Optioneel) Deel 7: Voor wanneer je samenwerkt
+Je mag bij deze module met z'n tweeën samenwerken. In dat geval moet je in het verslag aangeven:
+- Per persoon: een reflectie op wat je geleerd hebt *van* deze module.
+- Werkverdeling: wie heeft wat gedaan? Maak dit zo concreet mogelijk. Vage omschrijvingen worden niet nagekeken.
+
 ## Het verslag: IMRAD-structuur
 
 Je eindopdracht lever je in als een wetenschappelijk verslag volgens de **IMRAD-structuur** die je in {ref}`hoofdstukken/06_verificatie_validatie_verslag` hebt geleerd:
@@ -259,6 +265,10 @@ Controleer voor inleveren of je alles hebt:
 - [ ] Reflectie op proces: wat ging goed/beter?
 - [ ] Modelaannames heroverwogen
 - [ ] Wishlist voor volgende versie gemaakt
+
+### (Optioneel) Deel 7: Samenwerking
+- [ ] Per persoon een reflectie
+- [ ] Werkverdeling
 
 ### Verslag (IMRAD)
 - [ ] Introduction: context, onderzoeksvraag, relevantie
