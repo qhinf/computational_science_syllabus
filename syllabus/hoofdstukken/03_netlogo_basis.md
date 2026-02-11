@@ -344,6 +344,7 @@ to setup
   ; Maak omgeving
   ask patches [
     set pcolor brown         ; Grond is bruin
+    set voedsel? false       ; Er is geen voedsel
   ]
   
   ; Plaats voedsel op 10 random plekken
