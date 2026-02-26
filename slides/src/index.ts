@@ -10,6 +10,8 @@ import "highlight.js/styles/base16/one-light.css"
 
 import RevealNotes from "reveal.js/plugin/notes/notes.esm"
 
+import RevealMath from "reveal.js/plugin/math/math.esm"
+
 import "reveal.js/dist/reveal.css"
 import "reveal.js/dist/theme/white.css"
 
@@ -22,7 +24,7 @@ Reveal.initialize({
         37: "prev"
     },
     scrollActivationWidth: undefined,
-    plugins: [ Tldreveal, RevealMarkdown, RevealHighlight, RevealNotes ],
+    plugins: [ Tldreveal, RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ],
     tldreveal: {
         isDarkMode: false,
         snapshotUrl: "auto"
